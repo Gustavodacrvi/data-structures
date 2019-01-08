@@ -1,2 +1,3 @@
 # data-stuctures
-Implementation of data-structures and exercises.
+
+Implementation, exercises and solutions on different programming languages.

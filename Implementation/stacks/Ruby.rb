@@ -13,7 +13,7 @@ class Stack
   end
 
   def peek()
-    return @arr[@arr.length - 1]
+    return @arr[-1]
   end
 
   def isEmpty()
@@ -22,5 +22,4 @@ class Stack
     end
     return true
   end
-
 end

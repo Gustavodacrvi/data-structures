@@ -9,7 +9,7 @@ class Stack
   end
 
   def pop()
-    return @arr.pop()
+    return @arr.pop
   end
 
   def peek()
@@ -22,4 +22,3 @@ class Stack
     end
     return true
   end
-end

@@ -20,14 +20,12 @@
       end
 
       def update_pushed_elements(stack_index)
-        # increase the value of all the elements in last_el_position that are equal to or
-        # comes after the stack_index.
+        # increase the value of all the elements in last_el_position that are equal to or comes after the stack_index.
         @last_el_position.map!.each_with_index {|el, i| i >= stack_index ? el += 1 : el }
       end
 
       def update_popped_elements(stack_index)
-        # decrease the value of all the elements in last_el_position that are equal to or
-        # comes after the stack_index.
+        # decrease the value of all the elements in last_el_position that are equal to or comes after the stack_index.
         @last_el_position.map!.each_with_index {|el, i| i >= stack_index ? el -= 1 : el }
       end
     end

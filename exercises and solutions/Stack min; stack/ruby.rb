@@ -1,6 +1,9 @@
 # How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
 
 
+
+
+
 # solution 1:
 =begin
   class Stack
@@ -22,7 +25,7 @@
     end
 
     def isEmpty()
-      if @arr.lenght != 0
+      if @arr.length != 0
         return false
       end
       return true

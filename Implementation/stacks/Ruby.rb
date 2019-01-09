@@ -17,8 +17,9 @@ class Stack
   end
 
   def isEmpty()
-    if @arr.lenght != 0
+    if @arr.length != 0
       return false
     end
     return true
   end
+end

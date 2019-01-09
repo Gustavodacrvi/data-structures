@@ -49,6 +49,7 @@
       popped = @arr.pop
       if popped == @mins.peek
         @mins.pop
+      end
       return popped
     end
 

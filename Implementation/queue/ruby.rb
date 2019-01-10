@@ -1,19 +1,19 @@
-class Stack
+class Queue
   attr_accessor :arr
   def initialize
     @arr = []
   end
 
-  def push(element)
+  def add(element)
     @arr.push(element)
   end
 
-  def pop
-    return @arr.pop
+  def remove
+    return @arr.shift
   end
 
   def peek
-    return @arr[-1]
+    return @arr[0]
   end
 
   def isEmpty

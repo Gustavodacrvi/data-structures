@@ -8,7 +8,7 @@
 =begin
   class Stack
     attr_accessor :arr
-    def initialize()
+    def initialize
       @arr = []
     end
     
@@ -16,15 +16,15 @@
       @arr.push(element)
     end
 
-    def pop()
+    def pop
       return @arr.pop
     end
 
-    def peek()
+    def peek
       return @arr[-1]
     end
 
-    def isEmpty()
+    def isEmpty
       if @arr.length != 0
         return false
       end
@@ -48,14 +48,14 @@
       end
     end
 
-    def peek()
+    def peek
       if @stacks[@current_stack].isEmpty
         return @stacks[@current_stack - 1].peek
       end
       return @stacks[@current_stack].peek
     end
 
-    def pop()
+    def pop
       if @stacks[@current_stack].isEmpty and @current_stack != 0
         @stacks.pop
         @current_stack -= 1      
@@ -64,7 +64,7 @@
       return popped
     end
 
-    def isEmpty()
+    def isEmpty
       if !@stacks[0].isEmpty
         return false
       end

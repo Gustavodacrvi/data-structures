@@ -8,7 +8,7 @@
 =begin
   class Stack
     attr_accessor :arr
-    def initialize()
+    def initialize
       @arr = []
     end
     
@@ -16,15 +16,15 @@
       @arr.push(element)
     end
 
-    def pop()
+    def pop
       return @arr.pop
     end
 
-    def peek()
+    def peek
       return @arr[-1]
     end
 
-    def isEmpty()
+    def isEmpty
       if @arr.length != 0
         return false
       end
@@ -34,9 +34,9 @@
 
   class MinStack < Stack
     attr_accessor :arr, :mins
-    def initialize()
+    def initialize
       @arr = []
-      @mins = Stack.new()
+      @mins = Stack.new
     end
     
     def push(element)
@@ -48,7 +48,7 @@
       @arr.push(element)
     end
 
-    def pop()
+    def pop
       popped = @arr.pop
       if popped == @mins.peek
         @mins.pop
@@ -56,8 +56,8 @@
       return popped
     end
 
-    def min()
-      return @mins.peek()
+    def min
+      return @mins.peek
     end
   end
 =end
